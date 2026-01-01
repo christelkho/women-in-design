@@ -3,5 +3,5 @@
 *16 November 2025*
 
 # women-in-design
-[Final Version](file:///Users/christel/Documents/GitHub/women-in-design/index_four.html#early/)
+[Final Version](https://christelkho.github.io/women-in-design/index_four.html)/)
 *5 January 2026*
