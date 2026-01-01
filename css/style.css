@@ -1,0 +1,321 @@
+body {
+ background: #F6E9CE;
+ color: #333;
+ font-family: "Work Sans";
+ font-weight: 300;
+ font-size: 16px;
+}
+
+section, header {
+    width: 80%; 
+    max-width: 900px;
+    margin: auto;
+}
+
+section, header {
+    margin-bottom: 5rem;
+}
+
+header h1, h2, h3, blockquote {
+     font-family: "Space Grotesk", regular;
+    
+}
+
+header h2 {
+    text-align: left;
+}
+
+h1 {
+    font-size: 4.209rem;
+    line-height: 1;
+    color: #757943;
+}
+
+h2 {
+    font-size: 2.369rem;
+    font-style: regular; 
+    color: #710404;
+    margin-bottom: 2rem;
+    line-height: 1;
+    text-align: center;
+    
+}
+
+h3 {
+    color: #710404;
+}
+
+p{
+    line-height: 1.6;
+}
+
+header p {
+    font-size: 1.333rem;
+    font-family: "Work Sans";
+    font-weight: 600; 
+    font-style: normal;
+}
+
+h1 {
+    line-height: 0.5;
+}
+
+blockquote, p {
+ padding: 1rem 0;
+}
+
+blockquote {
+    font-size: 1.333rem;
+    font-style: italic;
+    color: #710404;
+    hanging-punctuation: first;
+    text-indent: -0.4rem;
+}
+
+/*-- Navigation --*/
+.responsivenav {
+     background: #710404;
+     padding: 0.5px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     
+    
+}
+
+
+#logo {
+    font-family: "Space Grotesk", serif;
+    font-size: 1.5rem;
+    padding: 40px;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+nav {
+    display: flex;
+    padding: 1rem 0;
+    
+}
+
+nav ul {
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    list-style-type: none;
+    padding-right: 70px;
+}
+
+nav ul li{
+    display: inline;
+    margin: 3px;
+}
+
+nav a{
+    border-bottom: none;
+    color: #fff;
+    padding: 10px;
+}
+
+
+nav a:hover {
+    transition: all 0.3s ease-in-out;
+}
+
+nav a {
+  color: white;            /* default */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #000;          /* hover color */
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+
+.cards-container {
+  display: flex;
+  flex-direction: column;  
+  gap: 20px;               
+  width: 100%;             
+  margin: 0 auto;          
+}
+
+.card {
+  display: flex;           
+  background: #f2f2f2;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+  border: 2px solid #000;
+
+}
+
+.card-image {
+  width: 150px;           
+  height: 150px;
+  object-fit: cover;      
+}
+
+.card-content {
+  flex: 1;                 
+}
+
+
+.cards-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cards-container a:hover .card {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.image-text-container {
+  display: flex;          
+  align-items: center;    
+  gap: 20px;              
+}
+
+.side-image {
+  width: 450px;          
+  height: 300px;          
+  object-fit: cover;      
+}
+
+
+hr {
+    color: #FFB78D; 
+}
+
+/*--Styling the footer --*/
+
+footer {
+    background: #710404;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 3rem;
+
+
+}
+.connections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;              /* spacing between icons */
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+#contact a {
+  color: #f5f1ea;        /* ← this replaces the blue */
+  text-decoration: underline;
+}
+#contact a:hover {
+  color: #000;        /* hover color */
+}
+
+/*-- ADDING MEDIA QUERIES FOR DIFFERENT DEVICES --*/
+@media (max-width: 600px) {
+h1 {
+    font-size: 2rem;
+}
+}
+
+/*--Adding responsive element to images--*/
+.gridimage {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}
+.gridimage {
+    row-gap: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.lined {
+display: flex;
+align-items: centre;
+gap: 2rem;
+}
+
+.lined::before,
+.lined::after {
+margin-top: 1rem;
+content: "";
+flex: 1;
+height: 10px;
+background: #FFB78D; /* Change to suit your design */
+}
+
+@media (max-width: 900px) {
+
+  .image-text-container {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .side-image {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* kill the fixed size if it’s still applied somewhere */
+  .side-image {
+    min-width: 0 !important;
+  }
+}
+/* NAV: keep words together + wrap cleanly on small screens */
+@media (max-width: 900px) {
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  nav li {
+    white-space: nowrap; /* stops EARLY / CAREERS splitting */
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 8px 10px;
+    font-size: 0.95rem;
+  }
+}
